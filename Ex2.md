@@ -100,14 +100,13 @@ select ename,designation,deptno,Hiredate from manager order by Hiredate asc;
 ```
 ### OUTPUT:
 
-
 ### Q9) List the Details of Employees who have joined before 30 Sept 81.
 
 ### QUERY:
 ```
+SELECT * FROM manager WHERE Hiredate < TO_DATE('1981-09-30', 'YYYY-MM-DD');
 ```
 ### OUTPUT:
-
 
 ### Q10)	List ename, deptno and sal after sorting emp table in ascending order by deptno and then descending order by sal.
 
@@ -125,7 +124,6 @@ select ename,deptno,salary from manager order by salary desc;
 ```
 select ename from manager where deptno not in (10,30,40);
 ```
-
 ### OUTPUT:
 ![11](https://github.com/Divya110205/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119404855/c8a630b0-411a-4326-b2b0-ba7909945666)
 
@@ -135,22 +133,25 @@ select ename from manager where deptno not in (10,30,40);
 ```
 select count(*) from manager;
 ```
-
 ### OUTPUT:
 ![12](https://github.com/Divya110205/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119404855/13bf5e9d-5d48-43ff-8325-34e5be532f80)
-
 
 ### Q13) Find maximum, minimum and average salary in EMP table.
 
 ### QUERY:
-
-
+```
+select ename ,salary,annualsalary from manager where salary = (select max(salary) from manager);
+select ename ,salary,annualsalary from manager where salary = (select min(salary) from manager);
+select avg(salary) from manager;
+```
 ### OUTPUT:
-
+![13](https://github.com/Divya110205/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119404855/88cff015-95ee-424f-bbdf-8608c126cd95)
 
 ### Q14) List the jobs and number of employees in each job. The result should be in the descending order of the number of employees.
 
 ### QUERY:
-
-
+```
+SELECT designation, COUNT(*) AS "Number of Employees" FROM manager GROUP BY designation ORDER BY COUNT(*) DESC;
+```
 ### OUTPUT:
+![14](https://github.com/Divya110205/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119404855/775bbaef-a6aa-4351-a915-936efa8d9be9)
