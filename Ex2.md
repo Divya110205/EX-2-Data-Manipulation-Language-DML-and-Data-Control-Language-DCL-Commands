@@ -69,7 +69,7 @@ SELECT ename from manager where designation='clerk';
 
 ### QUERY:
 ```
-SELECT ename from manager where designation!='manager';
+SELECT ename from manager where designation='manager';
 ```
 ### OUTPUT:
 ![5](https://github.com/Divya110205/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119404855/3fcb47a4-7147-4af5-823d-129dfd4adf8d)
@@ -83,7 +83,7 @@ select ename from manager WHERE ename LIKE 'S%' OR ename LIKE '%s';
 ### OUTPUT:
 ![6](https://github.com/Divya110205/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119404855/a370d63b-c11f-4e7b-b202-45e46ea41fd9)
 
-### Q8)	List employees whose name either start or end with ‘s’.
+### Q7)	List employees whose name either start or end with ‘s’.
 
 
 ### QUERY:
@@ -92,7 +92,7 @@ select ename from manager WHERE ename LIKE 'S%' OR ename LIKE '%s';
 ### OUTPUT:
 
 
-### Q9) Sort emp table in ascending order by hire-date and list ename, job, deptno and hire-date.
+### Q8) Sort emp table in ascending order by hire-date and list ename, job, deptno and hire-date.
 
 
 ### QUERY:
@@ -101,7 +101,7 @@ select ename from manager WHERE ename LIKE 'S%' OR ename LIKE '%s';
 ### OUTPUT:
 
 
-### Q10) List the Details of Employees who have joined before 30 Sept 81.
+### Q9) List the Details of Employees who have joined before 30 Sept 81.
 
 
 ### QUERY:
@@ -110,7 +110,7 @@ select ename from manager WHERE ename LIKE 'S%' OR ename LIKE '%s';
 ### OUTPUT:
 
 
-### Q11)	List ename, deptno and sal after sorting emp table in ascending order by deptno and then descending order by sal.
+### Q10)	List ename, deptno and sal after sorting emp table in ascending order by deptno and then descending order by sal.
 
 
 ### QUERY:
@@ -119,7 +119,7 @@ select ename from manager WHERE ename LIKE 'S%' OR ename LIKE '%s';
 ### OUTPUT:
 
 
-### Q12) List the names of employees not belonging to dept no 30,40 & 10
+### Q11) List the names of employees not belonging to dept no 30,40 & 10
 
 
 ### QUERY:
@@ -127,7 +127,7 @@ select ename from manager WHERE ename LIKE 'S%' OR ename LIKE '%s';
 
 ### OUTPUT:
 
-### Q13) Find number of rows in the table EMP
+### Q12) Find number of rows in the table EMP
 
 ### QUERY:
 
@@ -135,7 +135,7 @@ select ename from manager WHERE ename LIKE 'S%' OR ename LIKE '%s';
 ### OUTPUT:
 
 
-### Q14) Find maximum, minimum and average salary in EMP table.
+### Q13) Find maximum, minimum and average salary in EMP table.
 
 ### QUERY:
 
@@ -143,7 +143,7 @@ select ename from manager WHERE ename LIKE 'S%' OR ename LIKE '%s';
 ### OUTPUT:
 
 
-### Q15) List the jobs and number of employees in each job. The result should be in the descending order of the number of employees.
+### Q14) List the jobs and number of employees in each job. The result should be in the descending order of the number of employees.
 
 ### QUERY:
 
