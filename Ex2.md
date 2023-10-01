@@ -69,10 +69,10 @@ SELECT ename from manager where designation='clerk';
 
 ### QUERY:
 ```
-SELECT ename from manager where designation='manager';
+select ename from manager where designation <> 'manager';
 ```
 ### OUTPUT:
-![5](https://github.com/Divya110205/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119404855/3fcb47a4-7147-4af5-823d-129dfd4adf8d)
+![5](https://github.com/Divya110205/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119404855/8d35c5aa-84a7-4625-9bd5-d99490fb9f77)
 
 ### Q6)	List the names of employees not eligible for commission.
 
