@@ -99,14 +99,16 @@ SELECT enameFROM manager WHERE ename LIKE 'S%' OR ename LIKE '%s';
 select ename,designation,deptno,Hiredate from manager order by Hiredate asc;
 ```
 ### OUTPUT:
+![8](https://github.com/Divya110205/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119404855/99e008c4-f264-4414-9a57-437f5672e109)
 
 ### Q9) List the Details of Employees who have joined before 30 Sept 81.
 
 ### QUERY:
 ```
-SELECT * FROM manager WHERE Hiredate < TO_DATE('1981-09-30', 'YYYY-MM-DD');
+ SELECT * FROM manager WHERE Hiredate < DATE '1981-09-30';
 ```
 ### OUTPUT:
+![9](https://github.com/Divya110205/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119404855/1b791cd9-40b2-412f-8e3d-72c7b71273df)
 
 ### Q10)	List ename, deptno and sal after sorting emp table in ascending order by deptno and then descending order by sal.
 
