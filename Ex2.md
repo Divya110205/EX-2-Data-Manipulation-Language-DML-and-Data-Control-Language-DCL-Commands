@@ -26,56 +26,62 @@ insert into manager values(7839,'Subu',3000,400,36000,'1-Jul-82','manager',null,
 insert into manager values(7934,'Aadhi',3500,300,42000,'1-May-82','manager',30,NULL);
 insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bond');
 ```
+### TABLE:
+![table](https://github.com/Divya110205/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119404855/eb824328-342f-4dd0-8036-a5bdf1b745ed)
 
 ### Q1) Update all the records of manager table by increasing 10% of their salary as bonus.
 
 ### QUERY:
-
-
+```
+update manager set salary = salary + (salary * 0.10);
+```
 ### OUTPUT:
+![1](https://github.com/Divya110205/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119404855/51da1035-97e4-4093-a6c9-442cea45fba6)
 
 ### Q2) Delete the records from manager table where the salary less than 2750.
 
-
 ### QUERY:
-
-
+```
+DELETE FROM manager WHERE salary < 2750;
+```
 ### OUTPUT:
+![2](https://github.com/Divya110205/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119404855/2a1524fb-19bc-4aac-8003-3d1c9f26187f)
 
 ### Q3) Display each name of the employee as “Name” and annual salary as “Annual Salary” (Note: Salary in emp table is the monthly salary)
 
+### QUERY:
+```
+SELECT ename AS "Name", salary * 12 AS "Annual Salary" from manager;
+```
+### OUTPUT:
+![3](https://github.com/Divya110205/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119404855/87c1238b-91dc-46d1-8b0e-9e7bc5ca4105)
+
+### Q4)	List the names of Clerks from emp table.
 
 ### QUERY:
-
-
+```
+SELECT ename from manager where designation='clerk';
+```
 ### OUTPUT:
+![4](https://github.com/Divya110205/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119404855/bc150117-a04e-4980-bba7-ad30fa12e5ab)
 
-### Q5)	List the names of Clerks from emp table.
-
+### Q5)	List the names of employee who are not Managers.
 
 ### QUERY:
-
-
+```
+SELECT ename from manager where designation!='manager';
+```
 ### OUTPUT:
+![5](https://github.com/Divya110205/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119404855/3fcb47a4-7147-4af5-823d-129dfd4adf8d)
 
-
-### Q6)	List the names of employee who are not Managers.
-
+### Q6)	List the names of employees not eligible for commission.
 
 ### QUERY:
-
-
+```
+select ename from manager WHERE ename LIKE 'S%' OR ename LIKE '%s';
+```
 ### OUTPUT:
-
-
-### Q7)	List the names of employees not eligible for commission.
-
-
-### QUERY:
-
-
-### OUTPUT:
-
+![6](https://github.com/Divya110205/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119404855/a370d63b-c11f-4e7b-b202-45e46ea41fd9)
 
 ### Q8)	List employees whose name either start or end with ‘s’.
 
