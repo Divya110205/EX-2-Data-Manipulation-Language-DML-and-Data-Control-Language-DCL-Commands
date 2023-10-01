@@ -78,61 +78,66 @@ SELECT ename from manager where designation='manager';
 
 ### QUERY:
 ```
-select ename from manager WHERE ename LIKE 'S%' OR ename LIKE '%s';
+SELECT ename from manager where commission=0;
 ```
 ### OUTPUT:
-![6](https://github.com/Divya110205/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119404855/a370d63b-c11f-4e7b-b202-45e46ea41fd9)
+![6](https://github.com/Divya110205/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119404855/20b9d46b-6650-403c-bbe2-0bb479ac9861)
 
 ### Q7)	List employees whose name either start or end with ‘s’.
 
-
 ### QUERY:
-
-
+```
+SELECT enameFROM manager WHERE ename LIKE 'S%' OR ename LIKE '%s';
+```
 ### OUTPUT:
-
+![7](https://github.com/Divya110205/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119404855/8cfd2975-09f7-4065-9e1c-4ccb5bd33784)
 
 ### Q8) Sort emp table in ascending order by hire-date and list ename, job, deptno and hire-date.
 
-
 ### QUERY:
-
-
+```
+select ename,designation,deptno,Hiredate from manager order by Hiredate asc;
+```
 ### OUTPUT:
 
 
 ### Q9) List the Details of Employees who have joined before 30 Sept 81.
 
-
 ### QUERY:
-
-
+```
+```
 ### OUTPUT:
 
 
 ### Q10)	List ename, deptno and sal after sorting emp table in ascending order by deptno and then descending order by sal.
 
-
 ### QUERY:
-
-
+```
+select ename,deptno,salary from manager order by deptno asc;
+select ename,deptno,salary from manager order by salary desc;
+```
 ### OUTPUT:
-
+![10](https://github.com/Divya110205/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119404855/2c5233ab-203a-4b13-a938-67d782b40103)
 
 ### Q11) List the names of employees not belonging to dept no 30,40 & 10
 
-
 ### QUERY:
-
+```
+select ename from manager where deptno not in (10,30,40);
+```
 
 ### OUTPUT:
+![11](https://github.com/Divya110205/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119404855/c8a630b0-411a-4326-b2b0-ba7909945666)
 
 ### Q12) Find number of rows in the table EMP
 
 ### QUERY:
-
+```
+select count(*) from manager;
+```
 
 ### OUTPUT:
+![12](https://github.com/Divya110205/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119404855/13bf5e9d-5d48-43ff-8325-34e5be532f80)
 
 
 ### Q13) Find maximum, minimum and average salary in EMP table.
